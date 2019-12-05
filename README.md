@@ -1,5 +1,3 @@
-# Argon
+BSK Sistemas
 
-A React built dashboard template for freelance and by-the-project usage.
-
-[Click here to demo.](https://parallelam.github.io/Argon/)
+Human Resources React Application

@@ -38,7 +38,8 @@
     "react-select2-wrapper": "1.0.4-beta6",
     "react-tagsinput": "3.19.0",
     "react-to-print": "2.1.0",
-    "reactstrap": "8.0.0"
+    "reactstrap": "8.0.0",
+    "serialize-javascript": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

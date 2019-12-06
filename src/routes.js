@@ -3,6 +3,8 @@ import Dashboard from "views/pages/dashboards/Dashboard.jsx";
 import Admission from "views/pages/admission/Admission.jsx";
 import NewAdmission from "views/pages/admission/NewAdmission.jsx";
 
+import Login from "views/pages/examples/Login.jsx";
+
 const routes = [
   {
     path: "/dashboard",
@@ -44,10 +46,10 @@ const routes = [
         layout: "/admin"
       },
       {
-        path: "/integrate",
+        path: "/login",
         name: "Integração",
-        component: Dashboard,
-        layout: "/admin"
+        component: Login,
+        layout: "/auth"
       },
       {
         path: "/xp",

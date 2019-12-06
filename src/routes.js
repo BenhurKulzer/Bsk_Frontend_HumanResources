@@ -3,13 +3,6 @@ import Dashboard from "views/pages/dashboards/Dashboard.jsx";
 import Admission from "views/pages/admission/Admission.jsx";
 import NewAdmission from "views/pages/admission/NewAdmission.jsx";
 
-import Buttons from "views/pages/components/Buttons.jsx";
-import Cards from "views/pages/components/Cards.jsx";
-import Login from "views/pages/examples/Login.jsx";
-import Pricing from "views/pages/examples/Pricing.jsx";
-import Profile from "views/pages/examples/Profile.jsx";
-import Widgets from "views/pages/Widgets.jsx";
-
 const routes = [
   {
     path: "/dashboard",
@@ -45,21 +38,21 @@ const routes = [
     state: "posCollapse",
     views: [
       {
-        path: "/pricing",
+        path: "/admission-exam",
         name: "Exame Admissional",
-        component: Pricing,
-        layout: "/auth"
+        component: Dashboard,
+        layout: "/admin"
       },
       {
-        path: "/login",
+        path: "/integrate",
         name: "Integração",
-        component: Login,
-        layout: "/auth"
+        component: Dashboard,
+        layout: "/admin"
       },
       {
-        path: "/profile",
+        path: "/xp",
         name: "Experiência",
-        component: Profile,
+        component: Dashboard,
         layout: "/admin"
       }
     ]
@@ -71,38 +64,38 @@ const routes = [
     state: "componentsCollapse",
     views: [
       {
-        path: "/buttons",
+        path: "/people",
         name: "Lista de Colaboradores",
-        component: Buttons,
+        component: Dashboard,
         layout: "/admin"
       },
       {
-        path: "/cards",
+        path: "/company",
         name: "Lista de Empresas",
-        component: Cards,
+        component: Dashboard,
         layout: "/admin"
       }
     ]
   },
   {
-    path: "/widgets",
+    path: "/cc",
     name: "Contra Cheque",
     icon: "far fa-file-alt text-green",
-    component: Widgets,
+    component: Dashboard,
     layout: "/admin"
   },
   {
-    path: "/widgets",
+    path: "/biometric-point",
     name: "Pontos",
     icon: "fas fa-fingerprint text-black-50",
-    component: Widgets,
+    component: Dashboard,
     layout: "/admin"
   },
   {
-    path: "/widgets",
+    path: "/messages",
     name: "Mensagens",
     icon: "far fa-comments text-purple",
-    component: Widgets,
+    component: Dashboard,
     layout: "/admin"
   }
 ];

@@ -20,13 +20,15 @@ import IndexView from "views/Index.jsx";
 
 ReactDOM.render(
   <BrowserRouter>
+    
     <Switch>
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
       <Route path="/auth" render={props => <AuthLayout {...props} />} />
       <Route path="/" render={props => <IndexView {...props} />} />
       
-      <Redirect from="*" to="/auth/login" />
+      <Redirect from="/" to="/auth/login" />
     </Switch>
+
   </BrowserRouter>,
   document.getElementById("root")
 );
